@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eeman Gulraiz - Software Engineer, AI/ML Specialist & Full-Stack Developer. IT undergraduate at Air University Islamabad.">
+    <meta name="author" content="Eeman Gulraiz">
+    <title>Eeman Gulraiz | Software Engineer & AI Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Link Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar-header" id="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo-link" id="nav-logo">
+                <span class="logo-accent">E</span>eman<span class="logo-dot">.</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section-padding">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge animate-fade-in">Open to Internships & Remote Roles</span>
+                    <h1 class="hero-title animate-fade-in">
+                        Hi, I'm <span class="text-gradient">Eeman Gulraiz</span>
+                    </h1>
+                    <h2 class="hero-subtitle animate-fade-in">
+                        Software Engineer & <br>
+                        <span class="typing-text" id="typing-sub">AI Specialist</span>
+                    </h2>
+                    <p class="hero-desc animate-fade-in">
+                        IT undergraduate at Air University specializing in Agentic AI, full-stack systems, and machine learning pipelines. I turn challenging technical requirements into production-grade solutions.
+                    </p>
+                    <div class="hero-cta animate-fade-in">
+                        <a href="#contact" class="btn btn-primary" id="btn-hero-contact">Contact Me</a>
+                        <a href="#projects" class="btn btn-secondary" id="btn-hero-projects">Explore Projects</a>
+                    </div>
+                    <div class="hero-stats animate-fade-in">
+                        <div class="stat-item">
+                            <span class="stat-num">6th</span>
+                            <span class="stat-label">Semester Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">6+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Remote Ready</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual animate-fade-in">
+                    <div class="avatar-card-wrapper">
+                        <div class="avatar-card">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-inner">
+                                <img src="assets/avatar.png?v=2" alt="Eeman Gulraiz Portrait Avatar" class="avatar-img">
+                            </div>
+                            <div class="floating-badge badge-top-right">
+                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                                <span>AI & ML Dev</span>
+                            </div>
+                            <div class="floating-badge badge-bottom-left">
+                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                                    <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                                    <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                                    <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                                    <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                                </svg>
+                                <span>Full-Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="experience-section section-padding reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Professional Roles</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-desc">Practical exposure in software agencies, telecom enterprises, and e-commerce platforms.</p>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Aug – Sep 2025</div>
+                        <div class="timeline-content card">
+                            <span class="company-badge">Mach 01 (Remote)</span>
+                            <h3 class="role-title">Online Intern — Web, SEO & Graphics</h3>
+                            <p class="role-desc">
+                                Contributed to active client web assets, implementing modern SEO strategies and designing UI layouts for a California-based marketing and software agency.
+                            </p>
+                            <ul class="role-bullets">
+                                <li>Produced production-grade graphics and interactive UI components in Figma.</li>
+                                <li>Successfully collaborated asynchronously across multiple international time zones.</li>
+                                <li>Independently managed tasks and delivered features under tight deadlines in a fast-paced environment.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jul – Aug 2025</div>
+                        <div class="timeline-content card">
+                            <span class="company-badge">Talkpool Pakistan (Pvt.) Ltd</span>
+                            <h3 class="role-title">Internship Trainee — Networks</h3>
+                            <p class="role-desc">
+                                Gained deep technical insight into corporate network telemetry and cellular infrastructure architectures.
+                            </p>
+                            <ul class="role-bullets">
+                                <li>Assisted in real-time network monitoring and analysis of 4G LTE signal distributions.</li>
+                                <li>Drafted robust engineering documentation detailing layout modifications and connection topologies.</li>
+                                <li>Configured simulations utilizing network orchestration software (Cisco Packet Tracer).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2022 – Mar 2023</div>
+                        <div class="timeline-content card">
+                            <span class="company-badge">Online Store (E-commerce)</span>
+                            <h3 class="role-title">Virtual Assistant</h3>
+                            <p class="role-desc">
+                                Supervised online operations, stock management, and client communication.
+                            </p>
+                            <ul class="role-bullets">
+                                <li>Drove a 25% increase in orders through listing optimizations and workflow automation.</li>
+                                <li>Managed supplier coordination, product descriptions, and client satisfaction channels.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Expertise Section -->
+        <section id="services" class="services-section section-padding reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Specialized Domains</span>
+                    <h2 class="section-title">Core Competencies</h2>
+                    <p class="section-desc">Leveraging modern tech stacks to deploy end-to-end applications and intelligent models.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card card reveal-item">
+                        <div class="service-icon-box">
+                            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3>Full-Stack Engineering</h3>
+                        <p>Constructing scalable web applications. Comfortable building frontends (React JS, Angular) and connecting them to robust backends (.NET Core, FastAPI).</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card card reveal-item">
+                        <div class="service-icon-box">
+                            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+                            </svg>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Designing neural network pipelines (CNNs), handling NLP text classification (NLTK), and generating AI assets with Stable Diffusion and PyTorch.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card card reveal-item">
+                        <div class="service-icon-box">
+                            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Agentic AI & LLMs</h3>
+                        <p>Orchestrating Multi-Agent autonomous systems powered by the Google Gemini API to execute complex, contextual multi-step tasks.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card card reveal-item">
+                        <div class="service-icon-box">
+                            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h3>Mobile & Databases</h3>
+                        <p>Developing cross-platform mobile apps in Flutter (Dart) integrated with Firebase, PostgreSQL, MongoDB, and custom SQL data pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Skill Set</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-desc">Tools, frameworks, and programming languages I use to bring ideas to life.</p>
+                </div>
+                
+                <div class="skills-wrapper">
+                    <!-- Progress Bar Skills -->
+                    <div class="skills-progress card reveal-item">
+                        <h3>Domain Strengths</h3>
+                        <div class="skill-bar-group">
+                            <div class="skill-info">
+                                <span class="skill-name">Full-Stack Development (React, Angular, FastAPI, .NET)</span>
+                                <span class="skill-pct">92%</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-bar" data-width="92%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-group">
+                            <div class="skill-info">
+                                <span class="skill-name">AI & Deep Learning (PyTorch, CNN, NLP)</span>
+                                <span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-bar" data-width="88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-group">
+                            <div class="skill-info">
+                                <span class="skill-name">Agentic Workflows (Gemini API, Multi-Agents)</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-group">
+                            <div class="skill-info">
+                                <span class="skill-name">Mobile Apps (Flutter, Firebase)</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid of Tool Tags -->
+                    <div class="skills-tools card reveal-item">
+                        <h3>Technologies & Languages</h3>
+                        <p class="tools-intro">Highly comfortable developing and debugging in the following tech stack:</p>
+                        <div class="tools-grid">
+                            <div class="tool-tag"><span>Python</span></div>
+                            <div class="tool-tag"><span>PyTorch</span></div>
+                            <div class="tool-tag"><span>TypeScript (Angular)</span></div>
+                            <div class="tool-tag"><span>React JS</span></div>
+                            <div class="tool-tag"><span>FastAPI</span></div>
+                            <div class="tool-tag"><span>.NET Core</span></div>
+                            <div class="tool-tag"><span>Flutter (Dart)</span></div>
+                            <div class="tool-tag"><span>PostgreSQL</span></div>
+                            <div class="tool-tag"><span>MongoDB</span></div>
+                            <div class="tool-tag"><span>Git / GitHub</span></div>
+                            <div class="tool-tag"><span>Linux</span></div>
+                            <div class="tool-tag"><span>Figma (UI/UX)</span></div>
+                            <div class="tool-tag"><span>Google Gemini API</span></div>
+                            <div class="tool-tag"><span>C++ / Java</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section section-padding reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Work Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-desc">Real-world systems demonstrating programming capabilities, AI model design, and clean product execution.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls reveal-item">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 (Ad-Agent) -->
+                    <div class="project-card card reveal-item" data-category="ai-ml">
+                        <div class="project-img-placeholder">
+                            <img class="project-img" src="assets/adagent.png" alt="Ad-Agent Dashboard Screen">
+                            <span class="project-badge">Agentic AI & Web</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Ad-Agent — Autonomous AI Marketing Platform</h3>
+                            <p>An AI marketing platform for SMBs using Multi-Agent Systems and Google Gemini API. Offers region-based trend intelligence (pytrends), Urdu/English ad copy, and Stable Diffusion visuals.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Gemini API</span>
+                                <span class="tech-badge">FastAPI</span>
+                                <span class="tech-badge">React JS</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                            </div>
+                            <div class="project-footer-links">
+                                <span class="project-stat-label">FYP Air University</span>
+                                <a href="https://github.com/eemangulraiz-78070826a" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>View Profile</span>
+                                    <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Deepfake Detector) -->
+                    <div class="project-card card reveal-item" data-category="ai-ml">
+                        <div class="project-img-placeholder">
+                            <img class="project-img" src="assets/deepfake.png" alt="Deepfake Detector Web App Screen">
+                            <span class="project-badge">Deep Learning</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Deepfake Face Detection System</h3>
+                            <p>End-to-end deep learning pipeline using CNNs in PyTorch to classify real vs. AI-manipulated face images. Handled full ML lifecycle (preprocessing to inference).</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">PyTorch</span>
+                                <span class="tech-badge">CNN</span>
+                                <span class="tech-badge">Deepfake</span>
+                            </div>
+                            <div class="project-footer-links">
+                                <span class="project-stat-label">AI Research</span>
+                                <a href="https://github.com/EemanGulraiz/deepfake-detection.git" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>GitHub Code</span>
+                                    <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (AI Resume Screener) -->
+                    <div class="project-card card reveal-item" data-category="ai-ml">
+                        <div class="project-img-placeholder">
+                            <img class="project-img" src="assets/resumescreener.png" alt="AI Resume Screener Illustration Graphic">
+                            <span class="project-badge">Machine Learning</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>AI Resume Screener</h3>
+                            <p>Developed an automated resume screening and ranking system. Extracts keywords and applies text classification to evaluate matches against job descriptions.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">NLP</span>
+                                <span class="tech-badge">NLTK</span>
+                                <span class="tech-badge">Text Mining</span>
+                            </div>
+                            <div class="project-footer-links">
+                                <span class="project-stat-label">NLP Automation</span>
+                                <a href="https://github.com/EemanGulraiz/resume_screener.git" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>GitHub Code</span>
+                                    <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (E-Commerce GlamZone) -->
+                    <div class="project-card card reveal-item" data-category="web">
+                        <div class="project-img-placeholder">
+                            <img class="project-img" src="assets/glamzone.jpg" alt="GlamZone Web Store App Screen">
+                            <span class="project-badge">Frontend Dev</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>GlamZone: E-Commerce Store</h3>
+                            <p>Fully responsive cosmetic web store featuring dynamic cart management, custom product listings, REST API integrations, and Figma-designed layout components.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">REST API</span>
+                                <span class="tech-badge">Figma</span>
+                            </div>
+                            <div class="project-footer-links">
+                                <span class="project-stat-label">Vercel Live</span>
+                                <a href="https://angular-project-topaz.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>Live Site</span>
+                                    <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 (SmartLearnApp) -->
+                    <div class="project-card card reveal-item" data-category="mobile">
+                        <div class="project-img-placeholder">
+                            <img class="project-img" src="assets/smartlearn.png" alt="SmartLearn Mobile App login Screen">
+                            <span class="project-badge">Mobile App</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>SmartLearnApp</h3>
+                            <p>Cross-platform educational application incorporating user accounts registration, real-time study stats synchronization, and secure offline storage cache.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Dart</span>
+                                <span class="tech-badge">Firebase Auth</span>
+                                <span class="tech-badge">Firestore</span>
+                            </div>
+                            <div class="project-footer-links">
+                                <span class="project-stat-label">Firebase Live</span>
+                                <a href="https://smart-learn-app-b3843.web.app" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>Live App</span>
+                                    <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 (DailyBlingz Shopify) -->
+                    <div class="project-card card reveal-item" data-category="web">
+                        <div class="project-img-placeholder">
+                            <img class="project-img" src="assets/dailyblingz.png" alt="DailyBlingz Jewelry Store Screen">
+                            <span class="project-badge">Shopify Store</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>DailyBlingz E-Commerce Store</h3>
+                            <p>Shopify Jewelry Store with dropshipping integration, live ads campaigns setup, and optimized search engine optimization strategy to drive client conversion metrics.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Shopify</span>
+                                <span class="tech-badge">SEO Optimization</span>
+                                <span class="tech-badge">Google Ads</span>
+                                <span class="tech-badge">Meta Ads</span>
+                            </div>
+                            <div class="project-footer-links">
+                                <span class="project-stat-label">Active Store</span>
+                                <a href="https://dailyblingz.store/?srsltid=AfmBOoqbilj6JOJCI2iDR85vDTANHS1YabHWD1T6FIF51CZDyWYvLXCZ" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>Live Store</span>
+                                    <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Achievements Section -->
+        <section class="education-section section-padding reveal-section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Academic & Extracurriculars</span>
+                    <h2 class="section-title">Education & Achievements</h2>
+                    <p class="section-desc">Academic profile at Air University along with certificates and university engagement.</p>
+                </div>
+                <div class="skills-wrapper">
+                    <!-- Education Card -->
+                    <div class="card reveal-item" style="padding: 40px;">
+                        <h3>Academic History</h3>
+                        <div style="margin-bottom: 24px;">
+                            <span class="company-badge">Expected Graduation: May 2027</span>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.3rem; margin: 10px 0;">BS Information Technology</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">Air University, Islamabad</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 8px;"><strong>Focus:</strong> Software Engineering, AI & Machine Learning, Full-Stack Development</p>
+                            <p style="color: var(--primary-color); font-size: 0.95rem; margin-top: 10px;"><strong>Academic Status:</strong> 6th Semester Completed</p>
+                        </div>
+                        <div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 10px;">Certifications</h4>
+                            <ul class="role-bullets">
+                                <li>Introduction to Social Media Marketing</li>
+                                <li>Basics of SEO (Search Engine Optimization)</li>
+                                <li>Digital E-commerce</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Achievements & Societies Card -->
+                    <div class="card reveal-item" style="padding: 40px;">
+                        <h3>Distinctions & Activities</h3>
+                        <div style="margin-bottom: 24px;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 12px; color: var(--primary-color);">Honors & Competitions</h4>
+                            <ul class="role-bullets">
+                                <li><strong>2nd Position Winner</strong> - National Online Declamation Contest.</li>
+                                <li><strong>Active Member</strong> - Air University Computing & Innovation Society (AUCIS).</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 12px; color: var(--primary-color);">Languages</h4>
+                            <div class="tools-grid">
+                                <div class="tool-tag"><span>English (Professional)</span></div>
+                                <div class="tool-tag"><span>Urdu (Native)</span></div>
+                                <div class="tool-tag"><span>Punjabi (Native)</span></div>
+                                <div class="tool-tag"><span>Turkish (Basic)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Start a Conversation</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-desc">Interested in internships, startup roles, or remote collaborations? Drop a message below.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info card reveal-item">
+                        <h3>Connect Details</h3>
+                        <p class="contact-info-desc">Feel free to reach out via email, phone, or connect with me on professional social platforms.</p>
+                        
+                        <div class="contact-links">
+                            <div class="contact-link-item">
+                                <div class="link-icon-box">
+                                    <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="link-text-details">
+                                    <span class="link-label">Email</span>
+                                    <a href="mailto:eemanbutt9@gmail.com" class="link-value">eemanbutt9@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-link-item">
+                                <div class="link-icon-box">
+                                    <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <div class="link-text-details">
+                                    <span class="link-label">LinkedIn</span>
+                                    <a href="https://linkedin.com/in/eemangulraiz-78070826a" target="_blank" rel="noopener noreferrer" class="link-value">eemangulraiz-78070826a</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-link-item">
+                                <div class="link-icon-box">
+                                    <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="link-text-details">
+                                    <span class="link-label">Location</span>
+                                    <span class="link-value">Islamabad, Pakistan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper card reveal-item">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Internship Offer / Collaboration Opportunity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-contact">
+                                <span>Send Message</span>
+                                <svg class="submit-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                            <div class="form-status-msg" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <a href="#home" class="logo-link">
+                    <span class="logo-accent">E</span>eman<span class="logo-dot">.</span>
+                </a>
+                <p>Developing modern web products and machine learning algorithms at scale.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eeman Gulraiz. All rights reserved. Crafted with care.</p>
+                <ul class="footer-socials">
+                    <li><a href="https://linkedin.com/in/eemangulraiz-78070826a" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
