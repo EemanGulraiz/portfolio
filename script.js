@@ -280,4 +280,111 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1800);
         });
     }
+
+    /* ==========================================================================
+       CUSTOM CURSOR INTERACTION (SMOOTH INTERPOLATION)
+       ========================================================================== */
+    const cursorDot = document.getElementById('custom-cursor-dot');
+    const cursorOutline = document.getElementById('custom-cursor-outline');
+    
+    let mouseX = 0, mouseY = 0;
+    let dotX = 0, dotY = 0;
+    let outlineX = 0, outlineY = 0;
+    
+    window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+    
+    const animateCursors = () => {
+        // Linear interpolation for smooth elastic drag lag
+        dotX += (mouseX - dotX) * 0.25;
+        dotY += (mouseY - dotY) * 0.25;
+        
+        outlineX += (mouseX - outlineX) * 0.15;
+        outlineY += (mouseY - outlineY) * 0.15;
+        
+        if (cursorDot) {
+            cursorDot.style.left = `${dotX}px`;
+            cursorDot.style.top = `${dotY}px`;
+        }
+        
+        if (cursorOutline) {
+            cursorOutline.style.left = `${outlineX}px`;
+            cursorOutline.style.top = `${outlineY}px`;
+        }
+        
+        requestAnimationFrame(animateCursors);
+    };
+    
+    // Only run custom cursor on non-touch screens
+    if (window.matchMedia('(pointer: fine)').matches) {
+        requestAnimationFrame(animateCursors);
+        
+        const attachHoverEffects = () => {
+            const hoverables = document.querySelectorAll('a, button, select, input, textarea, .filter-btn, .project-card, .tool-tag, .contact-link-item');
+            hoverables.forEach(el => {
+                // Ensure we don't bind duplicates
+                el.removeEventListener('mouseenter', addHoverClass);
+                el.removeEventListener('mouseleave', removeHoverClass);
+                
+                el.addEventListener('mouseenter', addHoverClass);
+                el.addEventListener('mouseleave', removeHoverClass);
+            });
+        };
+        
+        const addHoverClass = () => {
+            if (cursorDot && cursorOutline) {
+                cursorDot.classList.add('hovered');
+                cursorOutline.classList.add('hovered');
+            }
+        };
+        
+        const removeHoverClass = () => {
+            if (cursorDot && cursorOutline) {
+                cursorDot.classList.remove('hovered');
+                cursorOutline.classList.remove('hovered');
+            }
+        };
+        
+        // Initial binding
+        attachHoverEffects();
+        
+        // Re-bind when filter buttons change visible project cards
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setTimeout(attachHoverEffects, 350);
+            });
+        });
+    }
+
+    /* ==========================================================================
+       TACTILE UI: 3D CARD TILT ON HOVER
+       ========================================================================== */
+    const tiltCards = document.querySelectorAll('.project-card, .service-card, .tactile-stack');
+    
+    if (window.matchMedia('(pointer: fine)').matches) {
+        tiltCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const mouseInsideX = e.clientX - rect.left;
+                const mouseInsideY = e.clientY - rect.top;
+                
+                const cardWidth = rect.width;
+                const cardHeight = rect.height;
+                
+                // Tilt ranges (-8deg to 8deg)
+                const degreesX = ((mouseInsideY / cardHeight) - 0.5) * -8;
+                const degreesY = ((mouseInsideX / cardWidth) - 0.5) * 8;
+                
+                card.style.transform = `perspective(1000px) rotateX(${degreesX}deg) rotateY(${degreesY}deg) translateY(-5px)`;
+                card.style.transition = 'none'; // Instant dynamic tilt feedback
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+                card.style.transition = 'transform 0.4s ease'; // Smooth return
+            });
+        });
+    }
 });
